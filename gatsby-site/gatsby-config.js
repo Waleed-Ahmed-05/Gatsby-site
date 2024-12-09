@@ -8,22 +8,19 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  pathPrefix: "/gatsby-site",
   siteMetadata: {
-    title: "My Gatsby Site", 
+    title: "My Gatsby Site",
     description: "A simple site built with Gatsby",
-    author: "Mudasir"
-  },
-  plugins: [ 
-    { 
-    resolve: "gatsby-source-filesystem", 
-    options: { 
-    name: "posts", 
-    path: `${__dirname}/src/posts/`, 
-    }, 
-    }, 
-    "gatsby-transformer-remark",
-
-    "gatsby-plugin-react-helmet" 
-    ],
-    pathPrefix: "/Gatsby",
+    },
+    plugins: [
+      {
+      resolve: "gatsby-source-filesystem",
+      options: {
+      name: "posts",
+      path: `${__dirname}/src/posts/`,
+      },
+      },
+      "gatsby-transformer-remark",
+      ],
 }
