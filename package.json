@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "gatsby-plugin-react-helmet": "^6.14.0",
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
+  }
+}
